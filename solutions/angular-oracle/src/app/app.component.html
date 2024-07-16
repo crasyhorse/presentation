@@ -1,0 +1,17 @@
+<main class="container mt-3">
+    <article class="section">
+        <div class="column is-offset-one-third is-one-third card">
+            <h1 class="title is-size-1">JavaScript Oracle 🔮</h1>
+            <form #oracleForm="ngForm" (ngSubmit)="getAdvice()" class="mb-5">
+                <label for="name">Who are you?</label>
+                <input class="input mb-3 mt-1" type="text" id="name" [(ngModel)]="val" name="name"/>
+                <button class="button is-info" id="submit">
+                    Get Advice 🔮
+                </button>
+            </form>
+            <ul class="is-size-5">
+                <li *ngFor="let advice of wordsOfAdvice">{{advice}}</li>
+            </ul>
+        </div>
+    </article>
+</main>

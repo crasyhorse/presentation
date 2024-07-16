@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vanilla JavaScript App</title>
+        <link rel="stylesheet" href="/src/bulma.min.css" />
+        <script type="module" src="/src/main.ts"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <main class="container mt-3">
+                <article class="section">
+                    <div class="column is-offset-one-third is-one-third card">
+                        <h1 class="title is-size-1">JavaScript Oracle 🔮</h1>
+                        <form class="mb-5">
+                            <label for="name">Who are you?</label>
+                            <input
+                                class="input mb-3 mt-1"
+                                type="text"
+                                id="name"
+                            />
+                            <button class="button is-info" id="submit">
+                                Get Advice 🔮
+                            </button>
+                        </form>
+                        <ul class="is-size-5"></ul>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </body>
+</html>
